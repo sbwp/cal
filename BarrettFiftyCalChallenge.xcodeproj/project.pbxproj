@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,14 @@
 		D92CD7DD260707EC004187E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92CD7DC260707EC004187E3 /* ContentView.swift */; };
 		D92CD7DF260707ED004187E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D92CD7DE260707ED004187E3 /* Assets.xcassets */; };
 		D92CD7E2260707ED004187E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D92CD7E1260707ED004187E3 /* Preview Assets.xcassets */; };
+		D92CD7EE26070853004187E3 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92CD7ED26070853004187E3 /* Database.swift */; };
+		D92CD7F526070913004187E3 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = D92CD7F426070913004187E3 /* SQLite */; };
+		D92CD7F926070981004187E3 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92CD7F826070981004187E3 /* Entry.swift */; };
+		D92CD7FC26070CCA004187E3 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92CD7FB26070CCA004187E3 /* DayView.swift */; };
+		D92CD80026070D93004187E3 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92CD7FF26070D93004187E3 /* Date.swift */; };
+		D92CD8032607B7F7004187E3 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92CD8022607B7F7004187E3 /* AppModel.swift */; };
+		D92CD8062607B98A004187E3 /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92CD8052607B98A004187E3 /* Publisher.swift */; };
+		D9BE6279260CD0AD002DDEF7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D9BE6278260CD0AD002DDEF7 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,13 @@
 		D92CD7DE260707ED004187E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D92CD7E1260707ED004187E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D92CD7E3260707ED004187E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D92CD7ED26070853004187E3 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		D92CD7F826070981004187E3 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		D92CD7FB26070CCA004187E3 /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
+		D92CD7FF26070D93004187E3 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		D92CD8022607B7F7004187E3 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		D92CD8052607B98A004187E3 /* Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
+		D9BE6278260CD0AD002DDEF7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D92CD7F526070913004187E3 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +52,7 @@
 		D92CD7CE260707EC004187E3 = {
 			isa = PBXGroup;
 			children = (
+				D9BE6278260CD0AD002DDEF7 /* .gitignore */,
 				D92CD7D9260707EC004187E3 /* BeaFiftyCalChallenge */,
 				D92CD7D8260707EC004187E3 /* Products */,
 			);
@@ -52,11 +69,16 @@
 		D92CD7D9260707EC004187E3 /* BeaFiftyCalChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				D92CD7FE26070D81004187E3 /* SystemExtensions */,
 				D92CD7DA260707EC004187E3 /* BeaFiftyCalChallengeApp.swift */,
 				D92CD7DC260707EC004187E3 /* ContentView.swift */,
 				D92CD7DE260707ED004187E3 /* Assets.xcassets */,
 				D92CD7E3260707ED004187E3 /* Info.plist */,
 				D92CD7E0260707ED004187E3 /* Preview Content */,
+				D92CD7ED26070853004187E3 /* Database.swift */,
+				D92CD7F826070981004187E3 /* Entry.swift */,
+				D92CD7FB26070CCA004187E3 /* DayView.swift */,
+				D92CD8022607B7F7004187E3 /* AppModel.swift */,
 			);
 			path = BeaFiftyCalChallenge;
 			sourceTree = "<group>";
@@ -67,6 +89,15 @@
 				D92CD7E1260707ED004187E3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D92CD7FE26070D81004187E3 /* SystemExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				D92CD7FF26070D93004187E3 /* Date.swift */,
+				D92CD8052607B98A004187E3 /* Publisher.swift */,
+			);
+			path = SystemExtensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +116,9 @@
 			dependencies = (
 			);
 			name = BeaFiftyCalChallenge;
+			packageProductDependencies = (
+				D92CD7F426070913004187E3 /* SQLite */,
+			);
 			productName = BeaFiftyCalChallenge;
 			productReference = D92CD7D7260707EC004187E3 /* BeaFiftyCalChallenge.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +146,9 @@
 				Base,
 			);
 			mainGroup = D92CD7CE260707EC004187E3;
+			packageReferences = (
+				D92CD7F326070913004187E3 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
 			productRefGroup = D92CD7D8260707EC004187E3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D92CD7E2260707ED004187E3 /* Preview Assets.xcassets in Resources */,
+				D9BE6279260CD0AD002DDEF7 /* .gitignore in Resources */,
 				D92CD7DF260707ED004187E3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +176,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D92CD8062607B98A004187E3 /* Publisher.swift in Sources */,
+				D92CD8032607B7F7004187E3 /* AppModel.swift in Sources */,
+				D92CD7F926070981004187E3 /* Entry.swift in Sources */,
+				D92CD80026070D93004187E3 /* Date.swift in Sources */,
+				D92CD7FC26070CCA004187E3 /* DayView.swift in Sources */,
 				D92CD7DD260707EC004187E3 /* ContentView.swift in Sources */,
 				D92CD7DB260707EC004187E3 /* BeaFiftyCalChallengeApp.swift in Sources */,
+				D92CD7EE26070853004187E3 /* Database.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D92CD7F326070913004187E3 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.12.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D92CD7F426070913004187E3 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D92CD7F326070913004187E3 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D92CD7CF260707EC004187E3 /* Project object */;
 }

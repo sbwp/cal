@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct BeaFiftyCalChallengeApp: App {
+    @StateObject var model: AppModel = AppModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(model)
         }
     }
 }
